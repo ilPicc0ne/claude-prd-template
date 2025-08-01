@@ -1,3 +1,9 @@
+# Project Description
+
+**Instructions for Users:** Replace this content with a basic description of your project. Include your product idea, target users, key problems you're solving, and any constraints or requirements you already know. This file will be read by Claude Code commands to create contextual PRDs tailored to your specific project.
+
+## Example Content (Replace with Your Project):
+
 I want to build a template for claude code that will create a solid but simple prd that can be used by claude code as an input to build the product. It can also be used by humans.
 
 approach
