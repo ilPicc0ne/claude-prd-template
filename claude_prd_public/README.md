@@ -9,8 +9,9 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
    git clone https://github.com/ilPicc0ne/claude-prd-template.git .
    ```
 
-2. **Describe your project:**
-   Edit `context/initial.md` with your basic project idea (2-3 sentences)
+2. **Add your project context:**
+   - Edit `context/initial.md` with your basic project idea (2-3 sentences)
+   - Add any additional context files to the `context/` directory (user research, requirements, existing specs, etc.)
 
 3. **Create your PRD:**
    ```bash
@@ -42,8 +43,8 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 ## How It Works
 
 ### Stage 1: One-Pager Creation
-1. **Context Analysis**: Reads your `initial.md` and project files
-2. **Smart Questioning**: Asks only relevant, non-redundant questions
+1. **Context Analysis**: Reads your `initial.md` and scans `context/` folder for additional files
+2. **Smart Questioning**: Asks only relevant, non-redundant questions based on existing context
 3. **Immediate Building**: Updates PRD file with each input
 4. **5 Core Sections**: Problem, Metrics, Users, Scope, Release Plan
 
@@ -63,6 +64,7 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 │       └── test_prd_system.md        # System validation
 ├── context/
 │   └── initial.md                    # Your project description
+│   └── [additional context files]    # User research, specs, requirements, etc.
 ├── templates/
 │   ├── prd_onepager_template.md      # One-pager structure
 │   ├── prd_expansion_template.md     # Detailed PRD structure
@@ -114,7 +116,12 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 
 - Claude Code CLI installed
 - Basic project description in `context/initial.md`
-- Any existing project files for additional context
+- (Optional) Additional context files in `context/` directory:
+  - User research and interviews
+  - Existing requirements or specifications
+  - Technical constraints or architecture docs
+  - Business goals and success criteria
+  - Competitive analysis or market research
 
 ## Support
 
