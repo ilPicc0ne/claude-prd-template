@@ -43,21 +43,22 @@ For each section:
 - **Ask targeted questions** only for information not in one-pager
 - **Provide contextual suggestions** based on industry best practices
 
-### 5. Progressive Questioning
-- Build on validated content, don't re-question basics
-- Focus on details needed for development
-- Offer to skip sections if not needed yet
-- Maintain 3-option approach: user input, Claude suggestion, skip
+### 5. Incremental Item-by-Item Expansion
+- **For User Stories**: Present and expand ONE user story at a time, not long lists
+- **For Features**: Work through ONE feature at a time with acceptance criteria
+- **For Personas**: Develop ONE persona completely before moving to next
+- **Immediate Updates**: After each item is defined, immediately update the PRD file and show diff
+- **Progressive Building**: Each response should expand the file incrementally
 
-### 6. Final Integration
-- Create comprehensive PRD maintaining logical flow
-- Ensure all 9 chapters support original success metrics
-- Generate AI development context for Claude Code
-- Validate technical feasibility against constraints
+### 6. Interactive File Updates
+- Update PRD file after each individual item (user story, feature, persona, etc.)
+- Show exactly what was added/changed with diff preview
+- Build document progressively rather than presenting complete sections
+- Allow user to see evolution of document in real-time
 
-### 7. Output Options
-Ask user preference:
-- Replace existing `{productName}_prd.md` with expanded version
-- Create `{productName}_prd_detailed.md` to keep both versions
+### 7. Output Strategy
+- Always update existing `{productName}_prd.md` file immediately after each input
+- Show diff of changes made
+- Continue building until user says expansion is complete
 
 Remember: The one-pager is your validated foundation. Build on it, don't change it. Add depth and detail while preserving all original decisions.

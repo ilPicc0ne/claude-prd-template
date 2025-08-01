@@ -55,10 +55,10 @@ For each section, provide 3 options:
 - Phase 2: enhancement features
 - Critical Dependencies
 
-### 4. Validation & Output
-- Check sections for consistency and contradictions
-- Present complete PRD using template from `/templates/prd_onepager_template.md`
-- Create the `{productName}_prd.md` file
-- Ask user to review and approve
+### 4. Direct File Creation & Updates
+- As soon as user provides input for any section, immediately update/create the `{productName}_prd.md` file
+- Show diff of changes made (what was added/modified)
+- Continue iteratively building the document section by section
+- Each input should result in immediate file modification with visible changes
 
 Remember: Build on existing context, avoid redundant questions, and ensure all sections support each other logically.
