@@ -21,6 +21,29 @@ The system uses context-aware questioning to build PRDs tailored to your specifi
 - Shows diff previews of changes
 - Processes items one-by-one (no overwhelming lists)
 
+## PRD Decision Tracking
+
+This system automatically tracks decisions and context across sessions:
+
+### Current PRD Status
+- **Active PRD**: [None currently active]
+- **Last Session**: [No previous sessions]
+- **Phase**: [Not started]
+
+### Key Decisions Made
+*This section will be populated as PRD decisions are made*
+
+### Session Context
+*Current session context and discovered information*
+- **Project Type**: [To be determined from context analysis]
+- **Technical Stack**: [Discovered from project files]
+- **Key Stakeholders**: [Identified during PRD creation]
+
+### Template Customizations
+*Track any modifications to templates or processes*
+
+---
+
 ## Need Help?
 
 For detailed documentation, examples, and guidance, see the [template documentation](https://github.com/ilPicc0ne/claude-prd-template).

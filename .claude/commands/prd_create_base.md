@@ -15,6 +15,11 @@ You are helping create a PRD one-pager. Follow this process:
 First ask: "What's your product/project name?"
 Use response to create filename: `{productName}_prd.md`
 
+**Decision Tracking Setup:**
+- Create `{productName}_decisions.md` using `/templates/prd_decisions_template.md`
+- Update CLAUDE.md with active PRD status
+- Initialize session tracking with start time
+
 ### 2. Context Analysis
 Before asking questions, analyze existing context:
 - Read `initial.md` (if present) for product ideas, requirements, constraints
@@ -57,8 +62,20 @@ For each section, provide 3 options:
 
 ### 4. Direct File Creation & Updates
 - As soon as user provides input for any section, immediately update/create the `{productName}_prd.md` file
-- Show diff of changes made (what was added/modified)
+- Show diff of changes made (what was added/modified) 
+- **Decision Logging**: After each major decision, update `{productName}_decisions.md` with:
+  - What decision was made
+  - When it was made
+  - What alternatives were considered (if any)
+  - Brief rationale
+  - Any context that influenced the decision
 - Continue iteratively building the document section by section
 - Each input should result in immediate file modification with visible changes
+
+### 5. Session Completion
+When the one-pager is complete:
+- Update `{productName}_decisions.md` with session summary
+- Update CLAUDE.md with completed status and key decisions
+- Note any context discovered for future expansion phase
 
 Remember: Keep responses concise for speed. Build on existing context, avoid redundant questions. Focus on breadth over depth - detailed specifications come in the expand phase.

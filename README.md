@@ -6,6 +6,17 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 
 ## Quick Start
 
+### Prerequisites Check
+Before starting, ensure you have:
+- ✅ **[Claude Pro subscription](https://claude.ai/upgrade)** (required for Claude Code)
+- ✅ **[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code)** installed and working
+- ✅ **Recommended**: IDE with Claude Code plugin:
+  - **[Cursor](https://cursor.sh/)** with [Claude Code integration](https://docs.anthropic.com/en/docs/claude-code/ide-integrations)
+  - **[Windsurf](https://codeium.com/windsurf)** with [Claude Code integration](https://docs.anthropic.com/en/docs/claude-code/ide-integrations)
+  - **[VS Code](https://code.visualstudio.com/)** with [Claude Code extension](https://docs.anthropic.com/en/docs/claude-code/ide-integrations)
+
+### Setup Steps
+
 1. **Clone this repository into your project folder:**
    ```bash
    git clone https://github.com/ilPicc0ne/claude-prd-template.git .
@@ -23,6 +34,8 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
    # Expand to detailed specifications
    /prd_expand
    ```
+
+> **💡 Pro Tip**: Use an IDE with Claude Code integration to see real-time file updates and diff previews as your PRD builds!
 
 ## What You Get
 
@@ -60,20 +73,34 @@ This system focuses on **Product** Requirements Documents, not Business Requirem
 - **Diff Previews**: See exactly what changes with each step
 - **Item-by-Item**: Process user stories, features, personas one at a time
 - **Context Intelligence**: Smart questions based on your project details
+- **Decision Tracking**: Automatic logging of decisions, rationale, and context across sessions
+- **Session Continuity**: Expansion phase references and builds on base creation decisions
 
 ## How It Works
 
-### Stage 1: One-Pager Creation
+### Stage 1: One-Pager Creation (`/prd_create_base`)
 1. **Context Analysis**: Reads your `initial.md` and scans `context/` folder for additional files
 2. **Smart Questioning**: Asks only relevant, non-redundant questions based on existing context
 3. **Immediate Building**: Updates PRD file with each input
-4. **5 Core Sections**: Problem, Metrics, Users, Scope, Release Plan
+4. **Decision Tracking**: Automatically logs key decisions and rationale
+5. **5 Core Sections**: 
+   - Problem & Opportunity (user pain + business driver)
+   - Solution Concept (what we're building + value prop)
+   - Target Users & Success Metrics (personas + KPIs)
+   - Critical User Journey (main happy path)
+   - MVP Scope (core capabilities + constraints)
 
-### Stage 2: Detailed Expansion
-1. **Foundation Preservation**: Builds on validated one-pager decisions
-2. **Progressive Development**: Expands one item at a time
+### Stage 2: Detailed Expansion (`/prd_expand`)
+1. **Foundation Preservation**: References validated one-pager decisions and their rationale
+2. **Progressive Development**: Expands one item at a time (user stories, features, personas)
 3. **Real-Time Evolution**: Watch your document grow incrementally
-4. **9 Comprehensive Chapters**: Complete development specifications
+4. **Decision Continuity**: Builds on previous decisions while tracking new ones
+5. **5 Comprehensive Chapters**: Complete development specifications
+   - Problem Definition & Strategic Context
+   - Solution Architecture & Scope
+   - User Context & Personas
+   - Critical User Journeys (with edge cases)
+   - Implementation & Success (user stories + technical guidance + metrics)
 
 ## File Structure
 
@@ -88,53 +115,68 @@ This system focuses on **Product** Requirements Documents, not Business Requirem
 ├── templates/
 │   ├── prd_onepager_template.md      # One-pager structure
 │   ├── prd_expansion_template.md     # Detailed PRD structure
+│   ├── prd_decisions_template.md     # Decision tracking structure
 │   └── questioning_process.md        # Systematic requirements gathering
+├── CLAUDE.md                         # Claude Code memory and session tracking
 └── README.md                         # This file
 ```
+
+**Generated Files** (created during PRD process):
+- `{productName}_prd.md` - Your PRD document (one-pager → expanded)
+- `{productName}_decisions.md` - Decision log with rationale and context
 
 ## Output Examples
 
 ### One-Pager PRD Sections:
-1. **Problem & Opportunity** - User pain points and business context
-2. **Success Metrics** - North Star KPI + key sub-metrics
-3. **Target Users & Critical Journeys** - Personas and core workflows
-4. **Solution Scope** - MVP features and non-functional requirements
-5. **Release Plan** - MVP, Phase 2, and dependencies
+1. **Problem & Opportunity** - Core user pain point + business driver
+2. **Solution Concept** - What we're building + value proposition + scope boundaries
+3. **Target Users & Success Metrics** - 1-2 primary personas + North Star KPI + sub-metrics
+4. **Critical User Journey** - 3-5 step main user flow + success moment
+5. **MVP Scope** - 3-5 core capabilities + constraints + explicit non-goals
 
 ### Detailed PRD Chapters:
-1. Problem Definition & Strategic Context
-2. User Context & Personas
-3. Critical User Journeys
-4. Solution Boundaries & Scope
-5. Non-Functional Requirements
-6. User Stories & Acceptance Criteria
-7. Success Metrics & Measurement
-8. Technical Architecture Guidance
-9. Release Planning & Roadmap
+1. **Problem Definition & Strategic Context** - Expanded from Problem & Opportunity
+2. **Solution Architecture & Scope** - Expanded from Solution Concept + MVP Scope  
+3. **User Context & Personas** - Expanded from Target Users & Success Metrics
+4. **Critical User Journeys** - Expanded from Critical User Journey (adds edge cases, error handling)
+5. **Implementation & Success** - New comprehensive section (detailed user stories, technical guidance, success metrics, release planning)
 
 ## Benefits
 
 ### For Product Teams
-- **Faster PRD Creation**: Hours reduced to minutes
+- **Faster PRD Creation**: Hours reduced to minutes with guided questioning
 - **Consistent Quality**: Structured templates ensure completeness
-- **Stakeholder Alignment**: Clear, focused documentation
-- **Iterative Refinement**: Easy updates and expansions
+- **Stakeholder Alignment**: Clear, focused documentation for go/no-go decisions
+- **Decision Transparency**: Automatic tracking of decisions and rationale
+- **Iterative Refinement**: Easy updates and expansions with preserved context
 
-### for Development Teams
-- **AI-Ready Context**: PRDs optimized for Claude Code development
+### For Development Teams
+- **AI-Ready Context**: PRDs optimized for Claude Code development workflows
 - **Clear Specifications**: Detailed acceptance criteria and technical guidance
 - **Measurable Success**: Defined metrics for feature validation
 - **Progressive Disclosure**: Start simple, add detail as needed
+- **Decision Context**: Understand the "why" behind requirements through decision logs
 
-### for IDE Integration
-- **Real-Time Feedback**: See changes as they happen
-- **Diff Previews**: Transparent update process
-- **Item-by-Item Flow**: Manageable, non-overwhelming interface
-- **Context Awareness**: Smart suggestions based on existing project files
+### For IDE Integration
+- **Real-Time Feedback**: See changes as they happen with immediate file updates
+- **Diff Previews**: Transparent update process showing exactly what changed
+- **Item-by-Item Flow**: Manageable, non-overwhelming interface processing one element at a time
+- **Context Awareness**: Smart suggestions based on existing project files and previous decisions
 
 ## Requirements
 
-- Claude Code CLI installed
+### Essential Prerequisites
+- **[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code)** installed and configured
+- **[Claude Pro subscription](https://claude.ai/upgrade)** (or higher) - required for Claude Code access
+- **Recommended**: IDE with Claude Code integration for optimal experience:
+  - **[Cursor](https://cursor.sh/)** with [Claude Code integration](https://docs.anthropic.com/en/docs/claude-code/ide-integrations)
+  - **[Windsurf](https://codeium.com/windsurf)** with [Claude Code integration](https://docs.anthropic.com/en/docs/claude-code/ide-integrations)
+  - **[VS Code](https://code.visualstudio.com/)** with [Claude Code extension](https://docs.anthropic.com/en/docs/claude-code/ide-integrations)
+  - Other compatible IDEs
+
+> **Why IDE integration?** The PRD creation process involves real-time file updates with diff previews. IDEs provide immediate visual feedback as your PRD builds, making it much easier to follow the document evolution and see exactly what changes with each step.
+
+### Project Setup
 - Basic project description in `context/initial.md`
 - (Optional) Additional context files in `context/` directory:
   - User research and interviews
