@@ -31,6 +31,26 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 - **Detailed PRD**: Comprehensive 5-chapter specifications
 - **Context-Aware**: Uses your project information for tailored questions
 
+### ⚠️ What's NOT Included: Business Requirements Brief (BRB)
+
+This system focuses on **Product** Requirements Documents, not Business Requirements. A **Business Requirements Brief (BRB)** may be needed as an earlier step for strategic planning:
+
+**BRB typically contains:**
+- Market analysis and opportunity sizing
+- Business case and ROI projections
+- Strategic objectives and success criteria
+- Competitive landscape analysis
+- Go-to-market strategy
+- Resource and budget requirements
+
+**When you need a BRB first:**
+- New product category or market entry
+- Significant strategic initiatives
+- Products requiring executive/board approval
+- Complex business model validation
+
+**Our PRD system assumes** you've already validated the business opportunity and focuses on **what to build** and **how users will interact** with the solution.
+
 ### 🤖 Claude Commands
 - `/prd_create_base` - Interactive PRD creation with immediate file updates
 - `/prd_expand` - Item-by-item expansion from one-pager to detailed specs
