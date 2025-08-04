@@ -219,11 +219,22 @@ Planned enhancements to make PRD creation even more powerful:
 
 *These features will build on the existing decision tracking system to provide even richer context and capabilities for PRD management.*
 
-## Support
+## Author & Maintainer
 
+**Silvan Geser** - Project Creator & Maintainer
+- GitHub: [@ilPicc0ne](https://github.com/ilPicc0ne)
+- LinkedIn: [silvan-geser](https://www.linkedin.com/in/silvan-geser/)
+
+> **Preferred Communication**: Please use GitHub Issues for bug reports, feature requests, and project-related questions. This keeps discussions public and searchable for the community. For business inquiries or collaboration opportunities, feel free to connect on LinkedIn.
+
+## Support & Community
+
+- **Questions & Bug Reports**: [GitHub Issues](https://github.com/ilPicc0ne/claude-prd-template/issues) (preferred)
+- **General Discussions**: [GitHub Discussions](https://github.com/ilPicc0ne/claude-prd-template/discussions)
 - **Template Documentation**: This README (bookmark this page!)
-- **Issues**: Report bugs or feature requests on GitHub
 - **Templates**: See templates folder for detailed structures
+
+*Response time: I aim to respond to issues within 5-7 business days. This is a passion project maintained alongside other commitments.*
 
 ## License
 
