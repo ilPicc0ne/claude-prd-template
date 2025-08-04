@@ -1,138 +1,108 @@
-# PRD Template System for Claude Code
+# Claude PRD Template System
 
-## Project Overview
+## What This Is
 
-This project provides a comprehensive template system for creating Product Requirement Documents (PRDs) using Claude Code. It enables rapid creation of professional PRDs that serve both human stakeholders and AI development workflows.
+A set of Claude Code commands and templates for creating professional Product Requirement Documents (PRDs) quickly and intelligently.
 
-## Repository Structure
+## Quick Start
 
-### Main Repository (prd_claude)
+1. **Add your project context:**
+   - Edit `context/initial.md` with your basic project idea
+   - Add any additional context files to `context/` directory
 
-- **Development repo**: Contains all project files for expansion and maintenance
-- **Location**: https://github.com/ilPicc0ne/prd_claude
-- **Purpose**: Project development, research, and template evolution
-- **local-path**: /Users/silvan/Development/Projects/prd_claude/
+2. **Create your PRD:**
+   ```
+   /create_prd_onepager    # Creates initial one-page PRD
+   /expand_prd            # Expands to detailed specifications
+   ```
 
-### Public Distribution (claude_prd_public)
+## What You Get
 
-- **User-facing repo**: Contains only the reusable components
-- **Location**: https://github.com/ilPicc0ne/claude-prd-template
-- **Purpose**: Clone into any project to get PRD creation capabilities
-- **local-path**: /Users/silvan/Development/Projects/prd_claude/claude_prd_public/
+### Interactive PRD Creation
+- **Context-aware questioning** - Reads your project files to ask smart questions
+- **Immediate file updates** - See your PRD building in real-time
+- **Item-by-item processing** - Handle user stories, features one at a time
+- **Diff previews** - See exactly what changes with each step
 
-## Core Components
+### Two-Stage Process
+1. **One-Pager PRD** - Quick stakeholder alignment (5 sections)
+2. **Detailed PRD** - Comprehensive specifications (9 chapters)
 
-### Claude Commands (.claude/commands/)
+## File Structure
 
-1. **create_prd_onepager.md** - Creates initial one-page PRD with contextual questioning
-2. **expand_prd.md** - Expands one-pager into detailed 9-chapter PRD
-3. **test_prd_system.md** - Tests the complete workflow using this project as example
+```
+.claude/commands/           # Claude Code commands
+├── create_prd_onepager.md  # One-pager creation
+├── expand_prd.md          # Detailed expansion  
+└── test_prd_system.md     # System validation
 
-### Templates (templates/)
+context/                   # Your project information
+└── initial.md            # Basic project description
+                          # Add more context files here
 
-1. **prd_onepager_template.md** - Structure for concise stakeholder alignment
-2. **prd_expansion_template.md** - Framework for detailed development specs
-3. **questioning_process.md** - Systematic approach for gathering requirements
+templates/                 # PRD structures
+├── prd_onepager_template.md
+├── prd_expansion_template.md
+└── questioning_process.md
+```
 
-### Context Files (context/)
+## Commands
 
-- **initial.md** - Project requirements and approach documentation
-- Supporting research and reference materials
+### `/create_prd_onepager`
+Creates a focused one-page PRD with:
+- Problem & Opportunity
+- Success Metrics  
+- Target Users & Critical Journeys
+- Solution Scope
+- Release Plan
+
+### `/expand_prd`
+Expands your one-pager into detailed specifications:
+- Problem Definition & Strategic Context
+- User Context & Personas
+- Critical User Journeys
+- Solution Boundaries & Scope
+- Non-Functional Requirements
+- User Stories & Acceptance Criteria
+- Success Metrics & Measurement
+- Technical Architecture Guidance
+- Release Planning & Roadmap
+
+### `/test_prd_system`
+Validates the complete workflow using your project as a test case.
 
 ## Key Features
 
-### Interactive File Updates
+### Context Intelligence
+- Automatically discovers relevant information from your project files
+- Asks only necessary questions by building on existing context
+- Suggests solutions based on your project type and constraints
 
-- **Immediate Creation**: PRD files created/updated immediately after each input
-- **Diff Preview**: Shows exactly what was added/changed for transparency
-- **Real-time Evolution**: Users see document building progressively
+### Progressive Building
+- Updates PRD file immediately after each input
+- Shows diff of changes for transparency
+- Processes complex items (user stories, personas) one at a time
+- No overwhelming lists or information dumps
 
-### Item-by-Item Processing
+### IDE Integration
+- Real-time file updates work seamlessly with Cursor and other IDEs
+- Diff previews show exactly what changed
+- Progressive document evolution provides immediate feedback
 
-- **User Stories**: Developed one at a time, not in overwhelming lists
-- **Features**: Individual processing with acceptance criteria
-- **Personas**: Complete development before moving to next
-- **Progressive Building**: Each response expands the file incrementally
+## Getting Started
 
-### Context-Aware Intelligence
+1. **Describe your project** in `context/initial.md`
+2. **Add any existing context** (requirements, research, etc.) to `context/` folder
+3. **Run `/create_prd_onepager`** to start building your PRD
+4. **Use `/expand_prd`** when ready for detailed specifications
 
-- **Auto-Discovery**: Scans existing project files for relevant context
-- **Smart Questions**: Avoids redundant questioning by using discovered information
-- **Contextual Suggestions**: Proposes solutions based on project type and existing data
+## Tips
 
-## Usage Workflow
+- **Start minimal** - Just describe your basic idea in `initial.md`
+- **Add context files** - User research, existing specs, constraints help create better PRDs
+- **Build progressively** - Start with one-pager, expand when validated
+- **Use for any project** - Templates work for web, mobile, API, enterprise software
 
-### For New Projects
+---
 
-1. Clone the public template: `git clone https://github.com/ilPicc0ne/claude-prd-template`
-2. Run `/create_prd_onepager` to build initial PRD
-3. Use `/expand_prd` to create detailed specifications
-4. Use `/test_prd_system` to validate the workflow
-
-### For Existing Projects
-
-1. Copy the `.claude/commands/` and `templates/` folders to your project
-2. Add any existing project context to `context/` folder
-3. Follow the workflow above
-
-## Development Approach
-
-### Template Philosophy
-
-- **Human + AI Optimized**: PRDs serve both stakeholder communication and AI development
-- **Context-Driven**: Leverage existing project information to minimize questioning
-- **Progressive Disclosure**: Build documents incrementally rather than overwhelming users
-- **Consistency Validation**: Ensure all sections support each other logically
-
-### Quality Standards
-
-- **Immediate Feedback**: Show changes as they happen for transparency
-- **Incremental Progress**: Process one item at a time for better UX
-- **Context Intelligence**: Use available information to ask smarter questions
-- **Template Consistency**: Maintain structured approach across all PRDs
-
-## Integration Benefits
-
-### Cursor/IDE Integration
-
-- Real-time diff previews show exactly what changed
-- Progressive file building provides immediate visual feedback
-- Item-by-item processing prevents overwhelming interfaces
-- Context discovery reduces manual input requirements
-
-### Claude Code Workflows
-
-- PRDs serve as comprehensive context for development tasks
-- Structured templates ensure consistent AI interpretation
-- Technical sections provide clear development guidance
-- Success metrics enable measurable development outcomes
-
-## Testing & Validation
-
-Use `/test_prd_system` to validate:
-
-- Context discovery effectiveness
-- Item-by-item processing functionality
-- Immediate file update capabilities
-- Diff preview accuracy
-- Template structure completeness
-- Cross-section consistency
-
-## Contributing
-
-To expand this system:
-
-1. Work in the main development repo
-2. Test changes using `/test_prd_system`
-3. Update the public distribution repo when ready
-4. Maintain separation between development and distribution content
-
-## Success Metrics
-
-The system succeeds when it:
-
-- Reduces PRD creation time from hours to minutes
-- Generates PRDs usable by both humans and AI systems
-- Maintains consistency across document sections
-- Provides transparent, real-time feedback during creation
-- Adapts intelligently to existing project context
+Ready to create your PRD? Edit `context/initial.md` and run `/create_prd_onepager`!
