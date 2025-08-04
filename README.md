@@ -2,6 +2,8 @@
 
 Create professional Product Requirement Documents (PRDs) using Claude Code with contextual intelligence and interactive workflows.
 
+> **📁 For Your Projects**: When you clone this template into your project, you'll get a clean setup with minimal documentation focused on your work. This README serves as the comprehensive guide for understanding and using the template system.
+
 ## Quick Start
 
 1. **Clone this repository into your project folder:**
@@ -121,10 +123,22 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
   - Business goals and success criteria
   - Competitive analysis or market research
 
+## After Cloning
+
+Once you clone this template into your project:
+
+1. **Your CLAUDE.md will be minimal** - focused on your project, not template documentation
+2. **Edit `context/initial.md`** with your project description  
+3. **Add relevant context files** to the `context/` directory
+4. **Run `/prd_create_base`** to start creating your PRD
+
+The cloned version keeps your project clean while giving you access to all the PRD creation capabilities.
+
 ## Support
 
+- **Template Documentation**: This README (bookmark this page!)
 - **Issues**: Report bugs or feature requests on GitHub
-- **Documentation**: See templates folder for detailed structures
+- **Templates**: See templates folder for detailed structures
 
 ## License
 
@@ -132,4 +146,4 @@ Open source - feel free to adapt for your team's needs.
 
 ---
 
-🚀 **Ready to create your PRD?** Edit `context/initial.md` and run `/prd_create_base` to get started!
+🚀 **Ready to create your PRD?** Clone this template and run `/prd_create_base` to get started!
