@@ -12,8 +12,8 @@ A set of Claude Code commands and templates for creating professional Product Re
 
 2. **Create your PRD:**
    ```
-   /create_prd_onepager    # Creates initial one-page PRD
-   /expand_prd            # Expands to detailed specifications
+   /prd_create_base    # Creates initial one-page PRD
+   /prd_expand         # Expands to detailed specifications
    ```
 
 ## What You Get
@@ -32,9 +32,8 @@ A set of Claude Code commands and templates for creating professional Product Re
 
 ```
 .claude/commands/           # Claude Code commands
-├── create_prd_onepager.md  # One-pager creation
-├── expand_prd.md          # Detailed expansion  
-└── test_prd_system.md     # System validation
+├── prd_create_base.md      # One-pager creation
+└── prd_expand.md          # Detailed expansion
 
 context/                   # Your project information
 └── initial.md            # Basic project description
@@ -48,7 +47,7 @@ templates/                 # PRD structures
 
 ## Commands
 
-### `/create_prd_onepager`
+### `/prd_create_base`
 Creates a focused one-page PRD with:
 - Problem & Opportunity
 - Success Metrics  
@@ -56,7 +55,7 @@ Creates a focused one-page PRD with:
 - Solution Scope
 - Release Plan
 
-### `/expand_prd`
+### `/prd_expand`
 Expands your one-pager into detailed specifications:
 - Problem Definition & Strategic Context
 - User Context & Personas
@@ -68,8 +67,6 @@ Expands your one-pager into detailed specifications:
 - Technical Architecture Guidance
 - Release Planning & Roadmap
 
-### `/test_prd_system`
-Validates the complete workflow using your project as a test case.
 
 ## Key Features
 
@@ -93,8 +90,8 @@ Validates the complete workflow using your project as a test case.
 
 1. **Describe your project** in `context/initial.md`
 2. **Add any existing context** (requirements, research, etc.) to `context/` folder
-3. **Run `/create_prd_onepager`** to start building your PRD
-4. **Use `/expand_prd`** when ready for detailed specifications
+3. **Run `/prd_create_base`** to start building your PRD
+4. **Use `/prd_expand`** when ready for detailed specifications
 
 ## Tips
 
@@ -105,4 +102,4 @@ Validates the complete workflow using your project as a test case.
 
 ---
 
-Ready to create your PRD? Edit `context/initial.md` and run `/create_prd_onepager`!
+Ready to create your PRD? Edit `context/initial.md` and run `/prd_create_base`!

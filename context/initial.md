@@ -12,5 +12,5 @@ I want to build a mobile app that helps busy parents track their children's scho
 
 ## Next Steps:
 
-1. Run `/create_prd_onepager` to generate your initial PRD
-2. Use `/expand_prd` to create detailed specifications
+1. Run `/prd_create_base` to generate your initial PRD
+2. Use `/prd_expand` to create detailed specifications

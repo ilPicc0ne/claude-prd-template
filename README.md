@@ -16,10 +16,10 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 3. **Create your PRD:**
    ```bash
    # Generate initial one-page PRD
-   /create_prd_onepager
+   /prd_create_base
    
    # Expand to detailed specifications
-   /expand_prd
+   /prd_expand
    ```
 
 ## What You Get
@@ -30,9 +30,8 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 - **Context-Aware**: Uses your project information for tailored questions
 
 ### 🤖 Claude Commands
-- `/create_prd_onepager` - Interactive PRD creation with immediate file updates
-- `/expand_prd` - Item-by-item expansion from one-pager to detailed specs
-- `/test_prd_system` - Validate the complete workflow
+- `/prd_create_base` - Interactive PRD creation with immediate file updates
+- `/prd_expand` - Item-by-item expansion from one-pager to detailed specs
 
 ### ⚡ Key Features
 - **Immediate Updates**: PRD files created/updated after each input
@@ -59,9 +58,8 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 ```
 ├── .claude/
 │   └── commands/
-│       ├── create_prd_onepager.md    # One-pager creation workflow
-│       ├── expand_prd.md             # Detailed expansion process
-│       └── test_prd_system.md        # System validation
+│       ├── prd_create_base.md        # One-pager creation workflow
+│       └── prd_expand.md             # Detailed expansion process
 ├── context/
 │   └── initial.md                    # Your project description
 │   └── [additional context files]    # User research, specs, requirements, etc.
@@ -127,7 +125,6 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 
 - **Issues**: Report bugs or feature requests on GitHub
 - **Documentation**: See templates folder for detailed structures
-- **Testing**: Use `/test_prd_system` to validate setup
 
 ## License
 
@@ -135,4 +132,4 @@ Open source - feel free to adapt for your team's needs.
 
 ---
 
-🚀 **Ready to create your PRD?** Edit `context/initial.md` and run `/create_prd_onepager` to get started!
+🚀 **Ready to create your PRD?** Edit `context/initial.md` and run `/prd_create_base` to get started!
