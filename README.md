@@ -26,7 +26,7 @@ Create professional Product Requirement Documents (PRDs) using Claude Code with 
 
 ### 📋 PRD Templates
 - **One-Pager**: Quick stakeholder alignment (5 focused sections)
-- **Detailed PRD**: Comprehensive 9-chapter specifications
+- **Detailed PRD**: Comprehensive 5-chapter specifications
 - **Context-Aware**: Uses your project information for tailored questions
 
 ### 🤖 Claude Commands

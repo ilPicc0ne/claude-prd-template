@@ -58,14 +58,10 @@ Creates a focused one-page PRD with:
 ### `/prd_expand`
 Expands your one-pager into detailed specifications:
 - Problem Definition & Strategic Context
-- User Context & Personas
+- Solution Architecture & Scope
+- User Context & Personas  
 - Critical User Journeys
-- Solution Boundaries & Scope
-- Non-Functional Requirements
-- User Stories & Acceptance Criteria
-- Success Metrics & Measurement
-- Technical Architecture Guidance
-- Release Planning & Roadmap
+- Implementation & Success
 
 
 ## Key Features

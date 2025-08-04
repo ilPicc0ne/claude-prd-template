@@ -2,91 +2,72 @@
 
 ## 1. Problem & Opportunity
 
-**Problem Statement:** [2-3 sentences describing the specific user pain points with concrete examples]
+**Core User Pain Point:** [Single clear sentence describing the main problem]
 
-**Business Context:** [Why this matters now - market opportunity, competitive pressure, strategic alignment]
-
-**Key Insight:** [Main user research finding or business driver that validates this problem]
+**Business Driver:** [Why this matters now - market opportunity, strategic need, competitive pressure]
 
 ---
 
-## 2. Success Metrics
+## 2. Solution Concept
 
-**North Star KPI:** [Single primary success measure that defines overall product success]
+**What We're Building:** [2-3 sentence elevator pitch of the product]
 
-**Key Sub-Metrics:**
-- [Feature-level KPI 1 that drives the north star]
-- [Feature-level KPI 2 that drives the north star]
-- [Feature-level KPI 3 that drives the north star]
+**Key Value Proposition:** [How this solves the user problem]
 
-**Leading Indicators:** [Early signals that will predict success/failure]
+**Scope Boundaries:**
+- **IN Scope:** [High-level capabilities we're including]
+- **OUT of Scope:** [What we're explicitly not doing]
 
 ---
 
-## 3. Target Users & Critical Journeys
+## 3. Target Users & Success Metrics
 
 ### Primary Personas
-**[Persona 1 Name]:** [Description, key needs, main frustrations]
-**[Persona 2 Name]:** [Description, key needs, main frustrations]
-**[Additional personas as needed]**
+- **[Persona 1]:** [Core need/frustration]
+- **[Persona 2]:** [Core need/frustration]
 
-### Core User Journey
-[Step-by-step description of the end-to-end flow for the main use case]
+### Success Metrics
+**North Star KPI:** [Single primary success measure]
 
-1. [User action/trigger]
-2. [System response/next step]
-3. [User action]
-4. [System response]
+**Key Sub-Metrics:**
+- [Metric 1 that drives north star]
+- [Metric 2 that drives north star]
+
+---
+
+## 4. Critical User Journey
+
+### Main User Flow
+1. [User starting point/trigger]
+2. [Key interaction with product]
+3. [System response/next step]
+4. [User achieves value]
 5. [Successful outcome]
 
-### Critical Success Path
-[What absolutely must work perfectly for users to get value from this product]
+**Critical Success Moment:** [Where user gets core value from the product]
+
+**Key Touchpoints:** [Main places user interacts with system]
 
 ---
 
-## 4. Solution Scope
+## 5. MVP Scope
 
-### MVP Features
-**[Feature Area 1]:**
-- As a [persona], I want [goal], so that [benefit]
-- As a [persona], I want [goal], so that [benefit]
+### Core Capabilities
+- [High-level capability 1]
+- [High-level capability 2]
+- [High-level capability 3]
+- [High-level capability 4]
+- [High-level capability 5]
 
-**[Feature Area 2]:**
-- As a [persona], I want [goal], so that [benefit]
-- As a [persona], I want [goal], so that [benefit]
-
-### Key Non-Functional Requirements
-- **Performance:** [Critical speed/response time requirements]
-- **Scale:** [User load, data volume, geographic requirements]
-- **Security:** [Critical security/compliance constraints]
-- **Cost:** [Budget constraints that impact design decisions]
-- **Platform:** [Target platforms - web, mobile, desktop, API]
+### Key Constraints
+- **Platform:** [Web, mobile, desktop, API]
+- **Timeline:** [Target timeframe]
+- **Budget:** [Cost constraints that affect scope]
 
 ### Explicit Non-Goals
-- [What we're NOT doing and why]
-- [Feature/scope we're explicitly avoiding]
-- [Future consideration we're deferring]
-
----
-
-## 5. Release Plan
-
-### MVP Release
-**Core Features:** [List of must-have features for initial launch]
-
-**Success Criteria:** [How we'll know if MVP succeeded - tied to metrics above]
-
-**Timeline:** [Target date or duration]
-
-### Phase 2 Features
-**Enhancement Areas:** [Features to add based on MVP learnings]
-
-**Drivers:** [What metrics/feedback will trigger Phase 2]
-
-### Critical Dependencies
-- [External factor that could impact timeline]
-- [Technical dependency that must be resolved]
-- [Business/regulatory requirement that affects launch]
+- [What we're NOT doing - item 1]
+- [What we're NOT doing - item 2]
+- [What we're NOT doing - item 3]
 
 ---
 

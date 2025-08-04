@@ -5,7 +5,7 @@ allowed-tools: Read, Write, Edit, LS, Grep, Glob
 
 # Expand PRD
 
-Expands an existing one-pager PRD into a comprehensive 9-chapter detailed PRD for development planning.
+Expands an existing one-pager PRD into a comprehensive 5-chapter detailed PRD for development planning. Each base section becomes a full chapter with complete specifications.
 
 ## Instructions
 
@@ -22,19 +22,15 @@ You are expanding a validated one-pager PRD into detailed specifications. Follow
 - Check context folder for any new information since one-pager creation
 - Plan expansion without contradicting validated choices
 
-### 3. Expansion Process
-Transform the 5 one-pager sections into 9 comprehensive chapters:
+### 3. Expansion Process  
+Transform the 5 streamlined base sections into 5 comprehensive chapters with full development detail:
 
-**Expand into:**
+**Expand base sections into:**
 1. **Problem Definition & Strategic Context** (from Problem & Opportunity)
-2. **User Context & Personas** (from Target Users)  
-3. **Critical User Journeys** (from Critical Journeys)
-4. **Solution Boundaries & Scope** (from Solution Scope)
-5. **Non-Functional Requirements** (from Key Non-Functional Requirements)
-6. **User Stories & Acceptance Criteria** (from MVP Features)
-7. **Success Metrics & Measurement** (from Success Metrics)
-8. **Technical Architecture Guidance** (new section)
-9. **Release Planning & Roadmap** (from Release Plan)
+2. **Solution Architecture & Scope** (from Solution Concept + MVP Scope)
+3. **User Context & Personas** (from Target Users & Success Metrics)  
+4. **Critical User Journeys** (from Critical User Journey - add edge cases, error handling)
+5. **Implementation & Success** (new comprehensive section combining technical guidance, detailed user stories, success metrics, and release planning)
 
 ### 4. Section-by-Section Expansion
 For each section:
@@ -61,4 +57,4 @@ For each section:
 - Show diff of changes made
 - Continue building until user says expansion is complete
 
-Remember: The one-pager is your validated foundation. Build on it, don't change it. Add depth and detail while preserving all original decisions.
+Remember: The base PRD is your validated foundation. Build on it, don't change it. Transform high-level concepts into detailed development specifications while preserving all original decisions.
