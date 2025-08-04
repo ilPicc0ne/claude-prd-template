@@ -196,6 +196,29 @@ Once you clone this template into your project:
 
 The cloned version keeps your project clean while giving you access to all the PRD creation capabilities.
 
+## Roadmap
+
+Planned enhancements to make PRD creation even more powerful:
+
+### 🔍 PRD Review & Analysis
+- **Smart Review**: Comprehensive analysis of entire PRD or specific sections
+- **Consistency Detection**: Automatically identify inconsistencies across sections
+- **Challenge Mode**: Proactively scrutinize and extend PRD elements
+- **Gap Analysis**: Detect missing requirements or underspecified areas
+
+### ⚡ Dynamic PRD Management
+- **Add Feature**: Seamlessly add new features to existing PRDs with impact analysis
+- **Scope Evolution**: Handle scope changes while maintaining decision consistency
+- **Stakeholder Feedback Integration**: Incorporate feedback while preserving rationale
+
+### 🎨 Visual PRD Enhancement
+- **UX Mockups**: Generate visual mockups directly from user journeys
+- **Flow Diagrams**: Create visual user flows to extend PRD clarity
+- **Interactive Prototypes**: Bridge the gap between requirements and design
+- **Visual Consistency**: Ensure UI/UX decisions align with PRD specifications
+
+*These features will build on the existing decision tracking system to provide even richer context and capabilities for PRD management.*
+
 ## Support
 
 - **Template Documentation**: This README (bookmark this page!)
